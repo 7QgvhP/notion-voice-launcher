@@ -1,0 +1,7 @@
+# Windows 環境での開発のため、CRLF/LF の混在による無用な diff を防ぐ
+* text=auto eol=lf
+
+# バイナリを明示する（text=auto の自動判定に依存しない）
+*.png      binary
+*.apk      binary
+*.keystore binary

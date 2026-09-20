@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Notion AI 音声入力ランチャー
+  電源ボタン2回押し等から Notion AI の音声入力モードを直接開くための中継アプリ。
+
+  バージョン（versionCode / versionName）と SDK レベル（minSdk / targetSdk）は
+  ここには書かない。build.ps1 の変数が唯一の出典で、aapt2 link が注入する。
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.local.notionvoice">
+
+    <!-- Notion のアクティビティを解決するために可視性の宣言が必要（Android 11 以降） -->
+    <queries>
+        <package android:name="notion.id" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".LauncherActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.NoDisplay">
+
+            <!-- ランチャーに表示させる（電源ボタン2回押しの選択肢に出すために必要） -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- デジタルアシスタント枠。Ear (open) の「ボイスアシスタント」から呼ぶ場合に使用 -->
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

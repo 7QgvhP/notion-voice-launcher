@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ランチャーおよび電源ボタン設定の一覧に表示される名称 -->
+    <string name="app_name">Notion 音声入力</string>
+    <!-- Notion が見つからない場合のエラー表示 -->
+    <string name="error_notion_not_found">Notion アプリが見つかりませんでした</string>
+</resources>
