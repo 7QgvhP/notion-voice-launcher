@@ -9,8 +9,8 @@
 $ErrorActionPreference = "Stop"
 
 # ==== ここだけを更新する ====
-$versionCode = 8
-$versionName = "1.1.4"
+$versionCode = 9
+$versionName = "1.1.5"
 
 # ==== ビルド設定 ====
 $minSdk    = 26
