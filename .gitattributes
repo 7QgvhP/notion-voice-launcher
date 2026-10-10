@@ -5,3 +5,7 @@
 *.png      binary
 *.apk      binary
 *.keystore binary
+
+# バッチファイルは CRLF（共通ルール: 改行は LF、.bat / .cmd のみ CRLF）
+*.bat text eol=crlf
+*.cmd text eol=crlf
