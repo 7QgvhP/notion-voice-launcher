@@ -1,4 +1,4 @@
-# Notion 音声入力ランチャー v1.1.5
+# Notion 音声入力ランチャー v1.1.6
 
 Nothing Phone (4a) で、電源ボタン2回押し・Essential Key・Ear (open) のジェスチャーから
 **Notion AI の音声入力モードを直接起動**するための中継アプリ。
