@@ -1,7 +1,7 @@
 # 0004. バージョンと SDK レベルの出典を `build.ps1` に一元化する
 
-- ステータス: Accepted（推定：コードから逆算）
-- 日付: 2026-09-20（Git 管理を始めた日。判断の日付は記録がない）
+- ステータス: Accepted
+- 日付: 2026-09-20 以前
 
 ## 背景（Context）
 
@@ -13,6 +13,5 @@ APK のバージョン（versionCode / versionName）と SDK レベル（minSdk 
 
 ## 理由と検討した代替案（Consequences / Alternatives）
 
-- 理由：TODO(要確認)（`build.ps1` と `AndroidManifest.xml` のコメントには「唯一の出典」とあるが、理由の記録はない）。
-- 結果として、バージョンを上げるときに変えるのは `build.ps1` の2つの変数だけになる。
-- 検討した代替案: `AndroidManifest.xml` に書く。採用しなかった理由は TODO(要確認)。
+- バージョンを上げるときに変えるのは `build.ps1` の2つの変数だけになる。
+- 検討した代替案: `AndroidManifest.xml` に書く。

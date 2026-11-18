@@ -2,7 +2,7 @@
 
 Nothing Phone (4a) のジェスチャーから、Notion AI の音声入力モードを直接起動する Android の中継アプリ。
 
-- バージョン: 1.1.8
+- バージョン: 1.1.9
 
 ## 概要
 
@@ -41,4 +41,4 @@ adb install -r build\notion-voice-launcher.apk
 
 ## ライセンス
 
-TODO(要確認): LICENSE ファイルがなく、ライセンスは定められていない。
+ライセンスは定めていない（LICENSE ファイルはない）。

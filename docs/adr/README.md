@@ -15,8 +15,6 @@
 | Deprecated | 廃止（後継なし） |
 | Superseded | 別の ADR で置き換えられた（置き換えた ADR へのリンクを書く） |
 
-コードや履歴から逆算した判断は、ステータスに「推定（コードから逆算）」と付記する。
-
 ## 運用
 
 - 既存の ADR は書き換えない。判断を変えるときは新しい ADR を追加し、古い ADR のステータスを Superseded にする。
@@ -26,10 +24,10 @@
 | 番号 | 題名 | ステータス | 日付 |
 |---|---|---|---|
 | [0001](0001-record-architecture-decisions.md) | ADR で設計判断を記録する | Accepted | 2026-11-15 |
-| [0002](0002-relay-app-for-intent-extra.md) | extra 付きのインテントを送る中継アプリにする | Accepted | 2026-09-20 |
-| [0003](0003-build-without-gradle.md) | Gradle を使わず、SDK のツールを直接呼んでビルドする | Accepted（推定：コードから逆算） | 2026-09-20 |
-| [0004](0004-version-source-in-build-script.md) | バージョンと SDK レベルの出典を `build.ps1` に一元化する | Accepted（推定：コードから逆算） | 2026-09-20 |
-| [0005](0005-do-not-bypass-keyguard.md) | ロック解除を省略する方式を採用しない | Accepted | 2026-09-20 |
-| [0006](0006-auto-detect-toolchain.md) | ツールチェーンのバージョンを固定せず自動で探す | Accepted | 2026-09-20 |
+| [0002](0002-relay-app-for-intent-extra.md) | extra 付きのインテントを送る中継アプリにする | Accepted | 2026-09-20 以前 |
+| [0003](0003-build-without-gradle.md) | Gradle を使わず、SDK のツールを直接呼んでビルドする | Accepted | 2026-09-20 以前 |
+| [0004](0004-version-source-in-build-script.md) | バージョンと SDK レベルの出典を `build.ps1` に一元化する | Accepted | 2026-09-20 以前 |
+| [0005](0005-do-not-bypass-keyguard.md) | ロック解除を省略する方式を採用しない | Accepted | 2026-09-20 以前 |
+| [0006](0006-auto-detect-toolchain.md) | ツールチェーンのバージョンを固定せず自動で探す | Accepted | 2026-09-20 以前 |
 
-日付が 2026-09-20 のものは、Git 管理を始めた日（v1.1.4）。判断そのものの日付は記録がない。
+「2026-09-20 以前」は、Git での管理を始めた日（v1.1.4）より前に決めた判断。

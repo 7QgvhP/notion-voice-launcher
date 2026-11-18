@@ -13,8 +13,6 @@
 `$toolRoot` の既定値は `%USERPROFILE%\android-build-tools`。環境変数 `NVL_TOOL_ROOT` で変えられる（[configuration.md](configuration.md)）。
 見つからない場合は、どのパターンに一致しなかったかを示して停止する。
 
-TODO(要確認): JDK と Android SDK の入手・展開の手順（どのファイルをどこから取得したか）は、リポジトリ内に記録がない。
-
 ## ビルド
 
 ```
